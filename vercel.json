@@ -13,5 +13,11 @@
   "env": {
     "REACT_APP_EXCHANGE_RATE_API_KEY": "@exchange_rate_api_key",
     "REACT_APP_EXCHANGE_RATE_BASE_URL": "@exchange_rate_base_url"
+  },
+  "build": {
+    "env": {
+      "REACT_APP_EXCHANGE_RATE_API_KEY": "@react_app_exchange_rate_api_key",
+      "REACT_APP_EXCHANGE_RATE_BASE_URL": "@react_app_exchange_rate_base_url"
+    }
   }
 }
