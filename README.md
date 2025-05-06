@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# EMI Calculator with Exchange Rates
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
 
-## Available Scripts
+## Overview
+A comprehensive EMI (Equated Monthly Installment) calculator application built with React, featuring real-time currency exchange rates and amortization schedule generation. Perfect for calculating loan payments and tracking exchange rates in real-time.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### EMI Calculation
+- Monthly payment computation with detailed breakdown
+- Amortization schedule generation
+- Multiple currency support
+- Real-time calculations
+- Export functionality for payment schedules
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Exchange Rates
+- Live currency rates with auto-refresh
+- Search and filter functionality
+- Sortable data grid
+- Real-time currency conversion
+- Export rates to Excel
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### UI/UX Features
+- Material Design components
+- Responsive layout for all devices
+- Dark/Light theme support
+- Mobile-friendly interface
+- Intuitive navigation
 
-### `npm test`
+## 🛠 Tech Stack
+- React 18
+- Material-UI v5
+- Context API for state management
+- React Router v6
+- Exchange Rates API
+- XLSX for data exports
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v8 or higher) or yarn (v1.22 or higher)
+- Modern web browser
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
+```bash
+git clone https://github.com/Framework12/emi_calculator.git
+cd emi-calculator
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-### `npm run eject`
+3. Create environment file
+```bash
+cp .env.example .env
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Configure environment variables
+```env
+REACT_APP_EXCHANGE_RATE_API_KEY=your_api_key
+REACT_APP_EXCHANGE_RATE_BASE_URL=https://v6.exchangerate-api.com/v6
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Start development server
+```bash
+npm start
+# or
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💻 Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### EMI Calculator
+1. Enter loan amount in your preferred currency
+2. Specify annual interest rate (%)
+3. Choose loan tenure (months/years)
+4. Select currency for calculation
+5. View monthly payment and total interest
+6. Export amortization schedule to Excel
 
-## Learn More
+### Exchange Rates
+1. View live exchange rates against USD
+2. Use search to find specific currencies
+3. Sort rates by currency code or value
+4. Export current rates to Excel
+5. Track rate changes in real-time
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
+```
+emi/
+├── src/
+│   ├── components/
+│   │   ├── calculator/
+│   │   └── exchange/
+│   ├── context/
+│   ├── hooks/
+│   ├── pages/
+│   └── styles/
+├── public/
+└── package.json
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Code Splitting
+## 🔧 Available Scripts
+```bash
+npm start      # Start development server
+npm test       # Run tests
+npm run build  # Create production build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
